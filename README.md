@@ -9,17 +9,26 @@ In many instances broader integration tests (aka "end-to-end tests") are run wit
 ## Main challenges and how we solved them
 Here we briefly introduce what the main challenges are / were in realizing the above goal.
 
+
 ### Detect test traffic
 * How? Request ID, some other header / content?
-* Source IP filtering? 
+* Source IP filtering?
+* Make mechanism pluggable / extensible to allow providing an own impl
+
 ### Reset and group together coverage for different test runs
 * When is a test run finished?? Hard to say automagically…
 * Per test case / suite coverage resolution
+
 ### Produce coverage results for on-going test runs
+
 ### Submit coverage data
 * Where? How?
+
 ### Serverless?
 * All of the above how?
 
+### Make configuration pluggable
+* supplied implementations: simple file based, some Spring-repo-based
 
+<br/>
 <sub>... boldly go where no one has gone before.</sub>
