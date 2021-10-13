@@ -11,11 +11,12 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>${maven.compiler.source}</maven.compiler.target>
     <maven.compiler.plugin.version>3.8.1</maven.compiler.plugin.version>
     <maven.surefire-plugin.version>2.22.2</maven.surefire-plugin.version>
     <maven-failsafe-plugin.version>${maven.surefire-plugin.version}</maven-failsafe-plugin.version>
+    <build-helper-maven-plugin.version>3.0.0</build-helper-maven-plugin.version>
     <maven-jar-plugin.version>3.2.0</maven-jar-plugin.version>
     <org.junit.version>5.8.1</org.junit.version>
     <junit4.version>4.13.2</junit4.version>
@@ -87,6 +88,13 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <version>${maven.surefire-plugin.version}</version>
       </plugin>
+
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>build-helper-maven-plugin</artifactId>
+        <version>${build-helper-maven-plugin.version}</version>
+      </plugin>
+      
     </plugins>
   </build>
 </project>
