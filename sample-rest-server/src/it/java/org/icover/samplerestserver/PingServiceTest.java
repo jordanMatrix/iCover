@@ -24,7 +24,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 @ExtendWith(SilenceSpringInitLogging.class)
 @WebMvcTest(controllers = PingService.class, properties = { "logging.level.root=WARN", "spring.main.banner-mode=log" })
 @ContextConfiguration(classes = { IntegrationTestConfig.class })
-public class PingServiceIntegrationTest {
+public class PingServiceTest {
     
     final ObjectMapper objectMapper = new ObjectMapper();
 

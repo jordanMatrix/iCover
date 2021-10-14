@@ -10,7 +10,7 @@ import ch.qos.logback.classic.LoggerContext;
 
 public class SilenceSpringInitLogging implements BeforeAllCallback {
 
-    private static final Logger LOG = LoggerFactory.getLogger(PingServiceIntegrationTest.class);
+    private static final Logger LOG = LoggerFactory.getLogger(PingServiceTest.class);
     static {
         // silence pre-spring init logging
         ((LoggerContext)LoggerFactory.getILoggerFactory()).getLogger("org.springframework").setLevel(Level.WARN);
